@@ -1,0 +1,1509 @@
+
+<?php
+          require_once("http://dumdum.es/ClickTale/ClickTaleTop.php");
+          ?>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://dumdum.es/resources/js/redirection-mobile.js"></script>
+<script>
+    SA.redirection_mobile ({
+        redirection_param : "mobile_redirection",
+        mobile_prefix : "mobile",
+        cookie_hours : "2"
+    });
+</script>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DumDum" />
+<meta name="keywords" content="dumdum" />
+<meta name="p:domain_verify" content="ecc9a13bd044e7bc435a79136910aeed"/>
+
+<meta property="og:image" content="http://dumdum.es/resources/img/dumdum-fb.png"/>
+<meta property="og:title" content="Imprime tus fotos de redes sociales y las de tus amigos - DumDum"/>
+<meta property="og:description" content="Bienvenido al Social Printing"/>
+<meta property="og:url" content="http://dumdum.es"/>
+
+<title>DumDum</title>
+
+
+
+    <link type="text/css" rel="stylesheet" media="screen" href="http://dumdum.es/resources/css/velo.css" />
+    <link type="text/css" rel="stylesheet" media="screen" href="http://dumdum.es/resources/css/cookiecuttr.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'/>
+
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<script src="http://dumdum.es/resources/lib/jquery-2.0.3.min.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="http://dumdum.es/resources/lib/jquery-ui/css/smoothness/jquery-ui.css" />
+<script src="http://dumdum.es/resources/lib/jquery-ui/jquery-ui.min.js"></script>
+<script src="http://dumdum.es/resources/lib/jquery-ui/jquery.ui.touch-punch.min.js"></script>
+<script src="http://dumdum.es/resources/js/jquery.cookie.js"></script>
+<script src="http://dumdum.es/resources/js/jquery.cookiecuttr.js"></script>
+
+<script type="text/javascript">
+    
+    $(document).ready(function () {
+        var pathArray = window.location.pathname.split( '/' );
+        console.log(pathArray);
+        if(pathArray[1]=='' && pathArray[0]==''&& ''==''){
+            $.cookieCuttr({
+                cookieAnalytics: false,
+                cookieNotificationLocationBottom: true,
+                cookieAcceptButtonText: '<img src="/resources/img/button-x.png">',
+                cookieAcceptButton: true,
+                cookieMessage: 'Utilizamos cookies propias y de terceros para ofrecerte una mejor experiencia y servicio. Al seguir navegando aceptas su uso. <a class="cc-cookie-info" href="{{cookiePolicyLink}}" title="acerca de nuestras cookies">Más información</a>',
+                cookiePolicyLink: 'http://www.dumdum.es/politicas/'
+            });}
+    });
+    
+        var path = 'http://dumdum.es';
+    
+        var relpath = '';
+    
+        var appUserId = '';
+    
+    
+    
+    
+    
+        
+</script>
+
+<script src="http://dumdum.es/resources/js/common.js"></script>
+
+    <script src="http://dumdum.es/resources/js/velo.js?t20140930_2"></script>
+
+
+<link rel="stylesheet" href="http://dumdum.es/resources/css/dcsmt.css" />
+<link rel="stylesheet" href="http://dumdum.es/resources/css/shepherd-theme-arrows.css" />
+
+<script src="http://dumdum.es/resources/js/shepherd.min.js"></script>
+<script type="text/javascript" src="http://dumdum.es/resources/js/jquery.Jcrop.js"></script>
+<script type="text/javascript" src="http://dumdum.es/resources/lib/easySlider1.7.js"></script>
+<link rel="stylesheet" href="http://dumdum.es/resources/css/jquery.Jcrop.css" type="text/css" />
+<link rel="shortcut icon" href="http://dumdum.es/resources/img/favicon.ico" />
+<script type="text/javascript" src="http://dumdum.es/resources/js/jquery.social.media.tabs.1.7.1.min.js"></script>
+<link rel="stylesheet" href="http://dumdum.es/resources/css/jBox.css" type="text/css" />
+<link rel="stylesheet" href="http://dumdum.es/resources/css/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="http://dumdum.es/resources/css/slippry.css" type="text/css" />
+<script src="http://dumdum.es/resources/js/jBox.min.js"></script>
+<script src="http://dumdum.es/resources/js/detectmobilebrowser.js"></script>
+<script src="http://dumdum.es/resources/js/jquery.magnific-popup.min.js"></script>
+<script  src="http://dumdum.es/resources/js/slippry.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function($){
+            $("#social-tabs").dcSocialTabs({
+                imagePath: "/resources/img/icons/",
+                autoClose: true,
+                widgets: "facebook,fblike,twitter,pinterest,instagram",
+                twitterId: "dumdumphoto",
+                facebookId: '229134870589659',
+                fblikeId: "229134870589659",
+                pinterestId: 'dumdumphoto',
+                instagramId:"!739415700",
+                instagram: {
+                    accessToken: '739415700.d5b4693.a66205ecd29647c09967813571378572',
+                    redirectUrl: 'http://dumdum.es',
+                    clientId: 'd5b4693f560346cf8c5f051a9ebc4f48',
+                    comments: 3,
+                    likes: 10
+                },
+                location: 'left',
+                align: 'top',
+                offset: 150,
+                width: 360,
+                start: 0});
+        });
+    </script>
+
+    
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46126296-1', 'dumdum.es',{ 'userId': '' });
+    ga('set', 'dimension1', '');
+    ga('require', 'displayfeatures');
+    ga('require', 'ecommerce', 'ecommerce.js');
+
+    ga('ecommerce:addTransaction', {
+        'id': '',                     // Transaction ID. Required.
+        'affiliation': 'DumDum',   // Affiliation or store name.
+        'revenue': '0',     // Grand Total.
+        'shipping': '' ,                // Shipping.
+        'currency': 'EUR'
+    });
+    ga('ecommerce:addItem', {
+        'id': '',                     // Transaction ID. Required.
+        'name': '',    // Product name. Required.
+        'sku': '',                 // SKU/code.
+        'price': '',                 // Unit price.
+        'quantity': '1',                   // Quantity.
+        'currency': 'EUR'
+    });
+    ga('ecommerce:send');
+    ga('ecommerce:clear');
+    ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 976619524;
+    var google_conversion_label = "2fpACJzGlwgQhJDY0QM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    <noscript>
+    <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976619524/?value=0&amp;label=2fpACJzGlwgQhJDY0QM&amp;guid=ON&amp;script=0"/>
+    </div>
+    </noscript>
+
+
+
+
+
+
+    
+    <script type="text/javascript">
+    var fb_param = {};
+    fb_param.pixel_id = '6013249391797';
+    fb_param.value = '0.00';
+    fb_param.currency = 'EUR';
+    (function(){
+      var fpw = document.createElement('script');
+      fpw.async = true;
+      fpw.src = '//connect.facebook.net/en_US/fp.js';
+      var ref = document.getElementsByTagName('script')[0];
+      ref.parentNode.insertBefore(fpw, ref);
+    })();
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6013249391797&amp;value=0&amp;currency=EUR" /></noscript>
+
+    
+    
+<!-- Google Code for Utilizan Productos gratuitos -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+    var pathArray = window.location.pathname.split( '/' );
+    console.log(pathArray);
+    if(pathArray[2]=='descargar-fotos' || pathArray[2]=='fin-mosaic-poster'|| pathArray[2]=='fin-collage-gratis'){
+    /* <![CDATA[ */
+    var google_conversion_id = 976619524;
+    var google_conversion_label = "fgk9CITJlwgQhJDY0QM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */}
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976619524/?value=1.00&amp;label=fgk9CITJlwgQhJDY0QM&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+<!-- Google Code for Todos -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 976619524;
+    var google_conversion_label = "2fpACJzGlwgQhJDY0QM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976619524/?value=1.00&amp;label=2fpACJzGlwgQhJDY0QM&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+<!-- Google Code for Constructor -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+    var pathArray = window.location.pathname.split( '/' );
+    console.log(pathArray);
+    if(pathArray[1]=='constructor'){
+    /* <![CDATA[ */
+    var google_conversion_id = 976619524;
+    var google_conversion_label = "-LogCPzJlwgQhJDY0QM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */}
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976619524/?value=1.00&amp;label=-LogCPzJlwgQhJDY0QM&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+<!-- Google Code for Compran -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+    var pathArray = window.location.pathname.split( '/' );
+    console.log(pathArray);
+    if(pathArray[1]=='checkout' && pathArray[2]=='thanks'){
+    /* <![CDATA[ */
+    var google_conversion_id = 976619524;
+    var google_conversion_label = "aA9tCIzIlwgQhJDY0QM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */}
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976619524/?value=1.00&amp;label=aA9tCIzIlwgQhJDY0QM&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+<!-- Google Code for A&ntilde;aden a carrito -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+    var pathArray = window.location.pathname.split( '/' );
+    console.log(pathArray);
+    if(pathArray[1]=='checkout' && pathArray[2]=='data'){
+    /* <![CDATA[ */
+    var google_conversion_id = 976619524;
+    var google_conversion_label = "GY9YCJTHlwgQhJDY0QM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */}
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+    <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/976619524/?value=1.00&amp;label=GY9YCJTHlwgQhJDY0QM&amp;guid=ON&amp;script=0"/>
+    </div>
+</noscript>
+<!--Start of Zopim Live Chat Script-->
+<script src="//v2.zopim.com/?2EyRfLJgyMaEJCmPGL5Lxzgfkeotv1Bd" charset="utf-8" type="text/javascript">
+
+</script>
+
+
+
+<script type="text/javascript">
+
+    $zopim(function() {
+        var name='';
+        var email='';
+        $zopim.livechat.setName(name);
+        $zopim.livechat.setEmail(email);
+    });
+
+    var ua = navigator.userAgent.toLowerCase(),
+            platform = navigator.platform.toLowerCase();
+    platformName = ua.match(/ip(?:ad|od|hone)/) ? 'ios' : (ua.match(/(?:webos|android)/) || platform.match(/mac|win|linux/) || ['other'])[0],
+            isMobile = /ios|android|webos/.test(platformName);
+
+    if (isMobile) {
+        $zopim.livechat.button.hide();
+    }
+</script>
+
+
+<!--End of Zopim Live Chat Script-->
+<!-- start Mixpanel -->
+
+    <script type="text/javascript">
+        (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+            for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2.2.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+        mixpanel.init("d700ab473d0b2bc88dd678b357223c4e");
+
+        var pathArray = window.location.pathname.split( '/' );
+
+        /*HOME*/
+        if (pathArray[1]==""){
+            mixpanel.track("Entra página");
+        }
+        if (pathArray[1]=="selector" && (pathArray[2] == "" || pathArray[2].charAt(0)=="#")){
+            mixpanel.track("Productos");
+        }
+        if(""=="" && pathArray[1]==""){
+            mixpanel.track("Entra sin registrar");
+        }
+
+        if(""=="" && pathArray[1]=="selector" && (pathArray[2] == "" || pathArray[2].charAt(0)=="#")){
+            mixpanel.track("Productos No Registrado");
+        }
+
+        if(""!="" && pathArray[1]==""){
+            userMix();
+            mixpanel.track("Entra Registrado");
+        }
+
+        if(""!="" && pathArray[1]=="selector" && (pathArray[2] == "" || pathArray[2].charAt(0)=="#")){
+            mixpanel.track("Productos Registrado");
+        }
+
+        /*SELECTOR*/
+
+        if(pathArray[2]!='' && pathArray[1]=='selector'){
+                mixpanel.track("Selector");
+            if(""!=""){
+                mixpanel.track("Selector General Registrado");
+            }else{
+                mixpanel.track("Selector General No Registrado");
+            }
+        }
+
+
+        /*CONSTRUCTOR*/
+       if(pathArray[2]!='' && pathArray[1]=='constructor'){
+        mixpanel.track("Constructor");
+        }
+        if(pathArray[2]!='' && pathArray[1]=='constructor'){
+            if(""!=""){
+                mixpanel.track("Constructor General Registrado");
+            }else{
+                mixpanel.track("Constructor General No Registrado");
+            }
+        }
+
+
+        /*ACCESO*/
+        if(pathArray[2]!='' && pathArray[1]=='selector'&& ""!="" ){
+            userMix();
+            mixpanel.track("Login Selector OK");
+        }
+        if(pathArray[1]=='login' && pathArray[2]!=''){
+            mixpanel.track("Página de login selector");
+        }
+        if(pathArray[1]=='acceso' && pathArray[2]=='login'){
+            mixpanel.track("Acceso a cuenta");
+        }
+        if(pathArray[1]=='acceso' && pathArray[2]=='registro'){
+            mixpanel.track("Pagina de registro");
+        }
+
+
+
+        /*GENERICO*/
+            function userMix(){
+            mixpanel.identify("");
+            mixpanel.people.set({
+                "$first_name": "",
+                "$last_seen": new Date(),
+                "$email": "",
+                "DumDumID":"",
+                "$temp": "NO"
+            });
+            mixpanel.register({
+                "$first_name": "",
+                "$last_seen": new Date(),
+                "$email": "",
+                "DumDumID":""
+            });
+        }
+
+
+    </script>
+
+
+<!-- end Mixpanel -->
+
+
+<script>
+    window.onload=function(){
+        var pathArray = window.location.pathname.split( '/' );
+        console.log(pathArray);
+        if(pathArray[1]=='constructor'){
+            Intercom('trackEvent', 'constructor');
+        }
+        if(pathArray[2]=='album' && pathArray[1]=='constructor'){
+            Intercom('trackEvent', 'constructor-album');
+        }
+        if(pathArray[2]=='polaroid' && pathArray[1]=='constructor'){
+            Intercom('trackEvent', 'constructor-polaroids');
+        }
+        if(pathArray[2]=='poster-clasico' && pathArray[1]=='constructor'){
+            Intercom('trackEvent', 'constructor-poster');
+        }
+        if(pathArray[2]=='collage' && pathArray[1]=='constructor'){
+            Intercom('trackEvent', 'constructor-collage');
+        }
+        if(pathArray[2]=='lienzo' && pathArray[1]=='constructor'){
+            Intercom('trackEvent', 'constructor-lienzo');
+        }
+        if(pathArray[2]=='cookie' && pathArray[1]=='constructor'){
+            Intercom('trackEvent', 'constructor-galletas');
+        }
+    }
+</script>
+
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link href="/resources/css/bootstrap.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="/resources/css/dumdum-styles-new.css?t=20150231" rel="stylesheet">
+
+
+
+<!-- Facebook Conversion Code for Ventas -->
+
+<script>
+    var pathArray = window.location.pathname.split( '/' );
+    if (pathArray[1]=='checkout' && pathArray[2]=='thanks'){
+    (function() {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', '6016463871806', {'value':'0.01','currency':'EUR'}]);}
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6016463871806&amp;cd[value]=0.01&amp;cd[currency]=EUR&amp;noscript=1" /></noscript>
+
+
+
+
+<!-- Facebook Conversion Code for Registro -->
+<script>
+    var pathArray = window.location.pathname.split( '/' );
+
+    if (pathArray[1]=='selector' && ''!=''){
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', '6016554564606', {'value':'0.00','currency':'EUR'}]);}
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6016463885206&amp;cd[value]=0.01&amp;cd[currency]=EUR&amp;noscript=1" /></noscript>
+
+<script>
+    var pathArray = window.location.pathname.split( '/' );
+    if (pathArray[1]=='selector' || pathArray[1]=='constructor'){
+    (function() {
+        //Rmktg30:
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+        _fbq.push(['addPixelId', '641736322612462']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);}
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=641736322612462&amp;ev=NoScript" /></noscript>
+
+
+
+
+<script>
+    var pathArray = window.location.pathname.split( '/' );
+    if (pathArray[1]=='selector' || pathArray[1]=='constructor'){
+    (function() {
+        //Rmkt60:
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+        _fbq.push(['addPixelId', '641736322612462']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);}
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=641736322612462&amp;ev=NoScript" /></noscript>
+
+
+
+<script>
+    var pathArray = window.location.pathname.split( '/' );
+    if (pathArray[1]=='selector' || pathArray[1]=='constructor'){
+    (function() {
+        //Rmkt180:
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+        _fbq.push(['addPixelId', '641736322612462']);
+    })();
+    window._fbq = window._fbq || [];
+    window._fbq.push(['track', 'PixelInitialized', {}]);}
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=641736322612462&amp;ev=NoScript" /></noscript>
+
+    <!-- Facebook Conversion Code for Gratuitos -->
+    <script>
+        var pathArray = window.location.pathname.split( '/' );
+        if(pathArray[2]=='descargar-fotos' || pathArray[2]=='fin-mosaic-poster'|| pathArray[2]=='fin-collage-gratis'){
+        (function() {
+            var _fbq = window._fbq || (window._fbq = []);
+            if (!_fbq.loaded) {
+                var fbds = document.createElement('script');
+                fbds.async = true;
+                fbds.src = '//connect.facebook.net/en_US/fbds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(fbds, s);
+                _fbq.loaded = true;
+            }
+        })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', '6016515053006', {'value':'0.00','currency':'EUR'}]);}
+    </script>
+    <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6016515053006&amp;cd[value]=0.00&amp;cd[currency]=EUR&amp;noscript=1" /></noscript>
+
+
+
+
+<!-- Fullstory-->
+<script>
+    var _fs_debug = false;
+    var _fs_host='www.fullstory.com',_fs_org='5Vg';
+    (function(m,n,e,t,l,o,g,y){
+        g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+        o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+        y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+        g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){FS(l,v)};
+        g.setSessionVars=function(v){FS('session',v)};g.setPageVars=function(v){FS('page',v)};
+    })(window,document,'FS','script','user');
+
+    //To integrate with a customer support tool, make sure to set the email field using FS.identify.
+    //The customer id should be whatever you use to identify a unique user in your system.
+    if(''!=''){
+    FS.identify('', {
+    displayName: '',
+    email: ''
+    });
+    }
+    function _fs_ready() {
+      var sessionUrl = FS.getCurrentSessionURL();
+    }
+</script>
+
+</head>
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+    var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+
+
+<body data-spy="scroll" data-target="#navigation" class="home">
+
+<!-- Google Tag Manager -->
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N9QC3P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N9QC3P');</script>
+
+<!-- End Google Tag Manager -->
+<header>
+    <script>
+        $(document).ready(function(){
+            $("#miperfil").hover(function(){
+                $("#miperfil").css("color","#3299CC");
+            },function(){
+                $("#miperfil").css("color","#104E8B");
+            });
+        });
+    </script>
+    <div class="container-fluid">
+
+        <div class="row row-same-height">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4 col-md-offset-1 col-xs-height col-middle" >
+                <a href="/" >
+                    <img src="http://dumdum.es/resources/img/logo-header-h.png" alt="Dumdum" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-sm-8 col-xs-8 visible-sm text-right visible-xs">
+                <a href="#" title="nav" class="mini-nav"><i class="fa fa-reorder"></i></a>
+            </div>
+            <div class="col-lg-4  col-md-4  col-xs-12 text-left col-xs-height col-middle">
+                <nav id="navigationleft" >
+                    <ul class="nav" id="navleft" style="text-align: left">
+                        <li >
+                            <a href="http://dumdum.es/selector/" >
+                                Productos
+                            </a>
+                        </li>
+                        <li >
+                            <a href="http://dumdum.es/como-funciona/" >
+                                ¿Cómo funciona?
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-5  col-md-5  col-xs-12 text-right col-xs-height col-middle">
+
+                <nav id="navigation">
+                    <ul class="nav">
+                                                    <li>
+                                <a class="button red-button"  href="/acceso/login" >
+                                    <span class="fb_button_text" style="text-transform: none; letter-spacing: 0;">Conectar</span>
+                                </a>
+                            </li>
+                        
+
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div><!-- end container -->
+</header>
+
+<!-- mainImage -->
+<div id="slideshow">
+
+
+    <ul id="sliderHome">
+        <li>
+            <div class="image-content"><img u="image" src="/resources/img/home/home-slide-polaroids.jpg" /></div>
+
+            <div class="cajapie" >
+                <div class="container-fluid">
+                    <div class="row vertical-align fondo-caja-pie">
+                        <div class="col-md-6 col-md-offset-1 text-center " >
+                            <span class="textoslider">Crea recuerdos inolvidables</br> con tus fotos o las de tus amigos</span>
+                        </div>
+                        <div class="col-md-5 text-center" >
+                            <a href="/selector/productos-polaroids" class="button red-big-button">
+                                ¡Empieza ya!
+                            </a>
+                        </div>
+
+                    </div><!-- end row -->
+                    <div class="row pasos">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-sm-offset-2 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-fotos-h.png">
+                            <p>Selecciona tus fotos o las de tus amigos</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-editar-h.png">
+                            <p>Diseña tu producto</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                            <img class="img-responsive" src="/resources/img/home/home-entrega-h.png">
+                            <p>Te lo enviamos</p>
+                        </div>
+                    </div><!-- end row -->
+
+                </div><!-- end container -->
+            </div>
+        </li>
+        <li>
+            <div class="image-content"><img u="image" src="/resources/img/home/home-slide-complementos-1.jpg" /></div>
+
+            <div class="cajapie" >
+                <div class="container-fluid">
+                    <div class="row vertical-align fondo-caja-pie">
+                        <div class="col-md-6 col-md-offset-1 text-center " >
+                            <span class="textoslider">Crea recuerdos inolvidables</br> con tus fotos o las de tus amigos</span>
+                        </div>
+                        <div class="col-md-5 text-center" >
+                            <a href="/selector/productos-tienda" class="button red-big-button">
+                                ¡Empieza ya!
+                            </a>
+                        </div>
+
+                    </div><!-- end row -->
+                    <div class="row pasos">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-sm-offset-2 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-fotos-h.png">
+                            <p>Selecciona tus fotos o las de tus amigos</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-editar-h.png">
+                            <p>Diseña tu producto</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                            <img class="img-responsive" src="/resources/img/home/home-entrega-h.png">
+                            <p>Te lo enviamos</p>
+                        </div>
+                    </div><!-- end row -->
+
+                </div><!-- end container -->
+            </div>
+        </li>
+        <li>
+            <div class="image-content"><img u="image" src="/resources/img/home/home-slide-complementos-2.jpg" /></div>
+
+            <div class="cajapie" >
+                <div class="container-fluid">
+                    <div class="row vertical-align fondo-caja-pie">
+                        <div class="col-md-6 col-md-offset-1 text-center " >
+                            <span class="textoslider">Crea recuerdos inolvidables</br> con tus fotos o las de tus amigos</span>
+                        </div>
+                        <div class="col-md-5 text-center" >
+                            <a href="/selector/productos-tienda" class="button red-big-button">
+                                ¡Empieza ya!
+                            </a>
+                        </div>
+
+                    </div><!-- end row -->
+                    <div class="row pasos">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-sm-offset-2 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-fotos-h.png">
+                            <p>Selecciona tus fotos o las de tus amigos</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-editar-h.png">
+                            <p>Diseña tu producto</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                            <img class="img-responsive" src="/resources/img/home/home-entrega-h.png">
+                            <p>Te lo enviamos</p>
+                        </div>
+                    </div><!-- end row -->
+
+                </div><!-- end container -->
+            </div>
+        </li>
+        <li>
+            <div class="image-content"><img u="image" src="/resources/img/home/home-slide-complementos-3.jpg" /></div>
+
+            <div class="cajapie" >
+                <div class="container-fluid">
+                    <div class="row vertical-align fondo-caja-pie">
+                        <div class="col-md-6 col-md-offset-1 text-center " >
+                            <span class="textoslider">Crea recuerdos inolvidables</br> con tus fotos o las de tus amigos</span>
+                        </div>
+                        <div class="col-md-5 text-center" >
+                            <a href="/selector/productos-tienda" class="button red-big-button">
+                                ¡Empieza ya!
+                            </a>
+                        </div>
+
+                    </div><!-- end row -->
+                    <div class="row pasos">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-sm-offset-2 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-fotos-h.png">
+                            <p>Selecciona tus fotos o las de tus amigos</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-editar-h.png">
+                            <p>Diseña tu producto</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                            <img class="img-responsive" src="/resources/img/home/home-entrega-h.png">
+                            <p>Te lo enviamos</p>
+                        </div>
+                    </div><!-- end row -->
+
+                </div><!-- end container -->
+            </div>
+        </li>
+
+        <li>
+            <div class="image-content"><img u="image" src="/resources/img/home/home-slide-lienzos.jpg" /></div>
+
+            <div class="cajapie" >
+                <div class="container-fluid">
+                    <div class="row vertical-align fondo-caja-pie">
+                        <div class="col-md-6 col-md-offset-1 text-center " >
+                            <span class="textoslider">Crea recuerdos inolvidables</br> con tus fotos o las de tus amigos</span>
+                        </div>
+                        <div class="col-md-5 text-center" >
+                            <a href="/selector/productos-lienzos" class="button red-big-button">
+                                ¡Empieza ya!
+                            </a>
+                        </div>
+
+                    </div><!-- end row -->
+                    <div class="row pasos">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-sm-offset-2 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-fotos-h.png">
+                            <p>Selecciona tus fotos o las de tus amigos</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-editar-h.png">
+                            <p>Diseña tu producto</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                            <img class="img-responsive" src="/resources/img/home/home-entrega-h.png">
+                            <p>Te lo enviamos</p>
+                        </div>
+                    </div><!-- end row -->
+
+                </div><!-- end container -->
+            </div>
+        </li>
+        <li>
+            <div class="image-content"><img u="image" src="/resources/img/home/home-slide-albums.jpg" /></div>
+
+            <div class="cajapie" >
+                <div class="container-fluid">
+                    <div class="row vertical-align fondo-caja-pie">
+                        <div class="col-md-6 col-md-offset-1 text-center " >
+                            <span class="textoslider">Crea recuerdos inolvidables</br> con tus fotos o las de tus amigos</span>
+                        </div>
+                        <div class="col-md-5 text-center" >
+                            <a href="/selector/productos-album-clasico" class="button red-big-button">
+                                ¡Empieza ya!
+                            </a>
+                        </div>
+
+                    </div><!-- end row -->
+                    <div class="row pasos">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-sm-offset-2 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-fotos-h.png">
+                            <p>Selecciona tus fotos o las de tus amigos</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-editar-h.png">
+                            <p>Diseña tu producto</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                            <img class="img-responsive" src="/resources/img/home/home-entrega-h.png">
+                            <p>Te lo enviamos</p>
+                        </div>
+                    </div><!-- end row -->
+
+                </div><!-- end container -->
+            </div>
+        </li>
+        <li>
+            <div class="image-content"><img u="image" src="/resources/img/home/home-slide-posters.jpg" /></div>
+
+            <div class="cajapie" >
+                <div class="container-fluid">
+                    <div class="row vertical-align fondo-caja-pie">
+                        <div class="col-md-6 col-md-offset-1 text-center " >
+                            <span class="textoslider">Crea recuerdos inolvidables</br> con tus fotos o las de tus amigos</span>
+                        </div>
+                        <div class="col-md-5 text-center" >
+                            <a href="/selector/productos-poster" class="button red-big-button">
+                                ¡Empieza ya!
+                            </a>
+                        </div>
+
+                    </div><!-- end row -->
+                    <div class="row pasos">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-sm-offset-2 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-fotos-h.png">
+                            <p>Selecciona tus fotos o las de tus amigos</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center" >
+                            <img class="img-responsive" src="/resources/img/home/home-editar-h.png">
+                            <p>Diseña tu producto</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
+                            <img class="img-responsive" src="/resources/img/home/home-entrega-h.png">
+                            <p>Te lo enviamos</p>
+                        </div>
+                    </div><!-- end row -->
+
+                </div><!-- end container -->
+            </div>
+        </li>
+
+    </ul>
+
+ </div><!-- end row -->
+
+
+
+
+<div id="pre-polaroids" class="preproducto">
+    <div class="row info-producto">
+        <div class="col-md-12 text-center" >
+            Tus fotos favoritas en el clásico formato polaroid
+        </div>
+    </div>
+</div>
+
+
+<div id="intro-polaroids" class="seccionhome">
+    <div class="home-titulo-producto-s">
+        Polaroids
+    </div>
+    <img src="http://dumdum.es/resources/img/home/home-polaroid.jpg" alt="Álbum japones" class="imagen-producto img-responsive">
+
+    <div class="producto-overlay-middle">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class=" col-md-12 text-center">
+                <a href="/selector/productos-polaroids" class="button red-middle-button">
+                    ¡Las quiero!
+                </a>
+             </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+    </div>
+</div>
+
+<div id="pre-tienda" class="preproducto">
+    <div class="row info-producto">
+        <div class="col-md-12 text-center" >
+            Accesorios, diseños e ideas para decorar con tus fotos
+        </div>
+    </div>
+</div>
+
+<div id="intro-tienda" class="seccionhome">
+    <div class="home-titulo-producto-s">
+        Tienda
+    </div>
+
+    <img src="http://dumdum.es/resources/img/home/home-tienda.jpg" alt="Álbum japones" class="imagen-producto img-responsive">
+
+
+    <div class="producto-overlay-middle">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class=" col-md-12 text-center">
+                    <a href="/selector/productos-tienda" class="button red-middle-button">
+                        Descubrir más
+                    </a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+
+</div>
+
+
+<div id="pre-metacrilatos" class="preproducto">
+    <div class="row info-producto">
+        <div class="col-md-12 text-center" >
+            ¡Llena tu casa con tus mejores momentos de forma original!
+        </div>
+    </div>
+</div>
+
+<div id="intro-metacrilatos" class="seccionhome  ">
+
+    <div class="home-titulo-producto-s">
+        Metacrilatos
+    </div>
+
+
+    <img src="http://dumdum.es/resources/img/home/home-metacrilatos.jpg" alt="Metacrilatos" class="imagen-producto img-responsive">
+    <div class="producto-overlay-middle">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class=" col-md-12 text-center">
+                    <a href="/selector/productos-metacrilato" class="button red-middle-button">
+                        Ver más
+                    </a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+
+</div>
+
+<div id="pre-posters" class="preproducto">
+    <div class="row info-producto">
+        <div class="col-md-12 text-center" >
+            Un collage con tus fotos o las de tus amigos, ¡en menos de 3 segundos!
+        </div>
+    </div>
+</div>
+<div id="intro-posters" class="seccionhome">
+    <div class="home-titulo-producto-s">
+        Pósters
+    </div>
+    <img src="http://dumdum.es/resources/img/home/home-posters.jpg" alt="posters" class="imagen-producto img-responsive">
+    <div class="producto-overlay-middle">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class=" col-md-12 text-center">
+                    <a href="/selector/productos-poster" class="button red-middle-button">
+                        Elegir el mío
+                    </a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</div>
+
+<div id="pre-albums" class="preproducto">
+    <div class="row info-producto">
+        <div class="col-md-12 text-center" >
+            Incluye tus fotos, comentarios y likes de Facebook e Instagram
+        </div>
+    </div>
+</div>
+<div id="intro-albums" class="seccionhome ">
+    <div class="home-titulo-producto-s">
+        Álbums
+    </div>
+    <img src="http://dumdum.es/resources/img/home/home-album.jpg" alt="album" class="imagen-producto img-responsive">
+    <div class="producto-overlay-middle">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class=" col-md-12 text-center">
+                    <a href="/selector/productos-album-clasico" class="button red-middle-button">
+                        Comenzar el mío
+                    </a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+
+</div>
+
+<div id="pre-lienzos" class="preproducto">
+    <div class="row info-producto">
+        <div class="col-md-12 text-center" >
+            ¡Convierte tus fotos en obras de arte!
+        </div>
+    </div>
+</div>
+<div id="intro-lienzos" class="seccionhome">
+    <div class="home-titulo-producto-s">
+        Lienzos
+    </div>
+    <img src="http://dumdum.es/resources/img/home/home-lienzo.jpg" alt="lienzo" class="imagen-producto img-responsive">
+    <div class="producto-overlay-middle">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class=" col-md-12 text-center">
+                    <a href="/selector/productos-lienzos" class="button red-middle-button">
+                        Empezar a crear
+                    </a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+
+</div>
+<div id="pre-lienzos" class="preproducto">
+    <div class="row info-producto">
+        <div class="col-md-12 text-center" >
+            ¡Tus fotos también son comestibles!
+        </div>
+    </div>
+</div>
+
+<div id="intro-galletas" class="seccionhome ">
+    <div class="home-titulo-producto-s">
+        Galletas
+    </div>
+    <img src="http://dumdum.es/resources/img/home/home-galletas.jpg" alt="galletas" class="imagen-producto img-responsive">
+    <div class="producto-overlay-middle">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class=" col-md-12 text-center">
+                    <a href="/selector/productos-galletas" class="button red-middle-button">
+                        Ñam, ñam...
+                    </a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div>
+</div>
+
+<script type="text/javascript">
+    
+    $( document ).ready(function() {
+        console.log('slippry');
+        $("#sliderHome").slippry({
+            slippryWrapper: '<div class="sy-box home-slider" />'
+            // transition: 'fade',
+            // useCSS: true,
+            // speed: 1000,
+            // pause: 3000,
+            // auto: true,
+            // preload: 'visible',
+            // autoHover
+        });
+    });
+    
+</script>
+
+<footer class="clear" id="footer">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-2 col-xs-6 text-center" >
+                <div class="logo-footer">
+                    <img src="http://dumdum.es/resources/img/logo-footer-h.png" />
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 text-left">
+                <ul class="conditions ">
+                    <li><a href="http://dumdum.es/aviso-legal">CONDICIONES LEGALES</a></li>
+                    <li><a href="http://dumdum.es/politicas">POLÍTICA DE PRIVACIDAD Y DE COOKIES</a></li>
+                    <li><a href="http://dumdum.es/faqs">FAQ'S</a></li>
+                    <li><a href="mailto:contacto@dumdum.es">CONTACTO</a></li>
+                </ul>
+
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-12" >
+                <ul class="contact-footer text-left">
+                    <li class="phone">
+                        <img alt="teléfono" src="http://dumdum.es/resources/img/telefono_icon.png">
+                        <a href="tel:810 521 004">810 521 004</a>
+                    </li>
+                    <li>
+                        <img alt="Correo DumDum" src="http://dumdum.es/resources/img/newsletter-icon.png">
+                        <a href="mailto:contacto@dumdum.es">contacto@dumdum.es</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3 hidden-sm hidden-xs text-center" >
+
+                    <p>Pago seguro garantizado</p>
+                    <img src="http://dumdum.es/resources/img/safe-payment.png" />
+
+
+            </div>
+
+        </div><!-- end row -->
+        <div class="row row-same-height">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center info-pie col-top" >
+
+                <span >2015 &copy; DUMDUM VENTURES S.L.U.</span>
+                <span>Accerelated by</span>
+                <a href="http://wayra.org/" target="_blank"> <img src="http://dumdum.es/resources/img/wayra.png" /></a>
+                <a href="http://www.enisa.es/" target="_blank"> <img src="http://dumdum.es/resources/img/enisa-2.png" /></a>
+
+
+            </div>
+        </div><!-- end row -->
+    </div><!-- end container -->
+
+
+</div>
+</footer>
+
+
+<div style="display:none;" id="popupny">
+    <div  onclick="closepopup();" id="closepopup"></div>
+    <div  onclick="goproductos();" id="goproductos"></div>
+    <div  onclick="gocondiciones();" id="gocondiciones"></div>
+</div>
+
+<div  id="popupnymobile" class="mfp-hide">
+    <div  class="mfp-close" id="closepopup"></div>
+    <div  onclick="goproductos();" id="goproductos"></div>
+    <div  onclick="gocondiciones();" id="gocondiciones"></div>
+</div>
+
+<script type="text/javascript">
+    
+
+    var myModal;
+    function setCookie(cname,cvalue,exdays)
+    {
+        var d = new Date();
+        d.setTime(d.getTime()+(exdays*24*60*60*1000));
+        var expires = "expires="+d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function getCookie(cname)
+    {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++)
+        {
+            var c = ca[i].trim();
+            if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+
+
+
+    $( document ).ready(function() {
+
+
+        var path = window.location.href;
+        if (path.indexOf("utm") > -1 ){
+
+            var cookiepopupny=getCookie('popupny');
+            if (cookiepopupny!=1){
+                setCookie('popupny',1,1);
+                if(jQuery.browser.mobile) {
+
+                    $.magnificPopup.open({
+                        items: {
+                            src: '#popupnymobile',
+                            type: 'inline'
+                        }
+                    });
+
+                }else{
+                    myModal = new jBox('Modal', {
+                        width: 1200,
+                        height: 831,
+                        content: $("#popupny"),
+                        closeButton: false,
+                        addClass:'popupny',
+                        overlay: true
+                    });
+
+                    myModal.open();
+                }
+
+                setCookie('popupny', 1, 1);
+            }
+        }
+
+    });
+
+    function closepopup(){
+        myModal.close();
+    }
+
+    function goproductos(){
+        window.location.href='/selector';
+    }
+
+    function gocondiciones(){
+
+        window.location.href='/ny/promo/tclegales.php';
+    }
+
+    
+</script>
+
+
+
+
+<!--
+    <div id="bod">
+        <div id="wrapper">
+            <img id="cierre" src="http://dumdum.es/resources/img/x.png">
+            <div id="logo">
+                <img src="http://dumdum.es/resources/img/logo_dumdum.png">
+            </div>
+            <div id="intro">
+                <b>DumDum</b> funciona por invitación. Si aún no tienes la tuya dejanos tus datos abajo y te la enviaremos al e-mail.
+            </div>
+            <div id="datos">
+                <div id="email">
+                    <label class="tittle">Pide tu invitación</label>
+                    <input class="input_data" id="mail" type="text" value="" placeholder="Introduce tu e-mail">
+
+                </div>
+                <div id="invitacion">
+                    <label class="tittle">Ya tengo invitación</label>
+                    <input class="input_data" id="codigo" type="text" value="" placeholder="Introduce tu invitación">
+                </div>
+            </div>
+            <div id="pie">
+                <div id="cont">
+                    <button id="continuar">CONTINUAR</button>
+                </div>
+                <div>
+                    <div id="check">
+                        <input id="sel" type="checkbox" >
+                    </div>
+                    <div id="cond">
+                        Mediante el envío de mis datos personales confirmo que he leído y acepto la <a href="http://dumdum.es/politicas/">política de privacidad y de cookies</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="overlay"></div>
+    estaba el if del coupon-->
+
+
+<div id="social-tabs"></div>
+
+<script type="text/javascript">
+    (function(){
+        var s   = document.createElement('script');
+        var x   = document.getElementsByTagName('script')[0];
+        s.type  = 'text/javascript';
+        s.async = true;
+        s.src   = ('https:'==document.location.protocol?'https://':'http://')
+                + 'eu-sonar.sociomantic.com/js/2010-07-01/adpan/dumdum-es';
+        x.parentNode.insertBefore( s, x );
+    })();
+</script>
+
+<script type="text/javascript">
+    
+
+
+    function setCookie(cname,cvalue,exdays)
+    {
+        var d = new Date();
+        d.setTime(d.getTime()+(exdays*24*60*60*1000));
+        var expires = "expires="+d.toGMTString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    function getCookie(cname)
+    {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++)
+        {
+            var c = ca[i].trim();
+            if (c.indexOf(name)==0) return c.substring(name.length,c.length);
+        }
+        return "";
+    }
+
+
+
+    $( document ).ready(function() {
+        var path = window.location.href;
+        if (path.indexOf("utm_medium=Por_ser_movistar") > -1 && path.indexOf("utm_campaign=Afiliacion_ext_Por_ser_movistar") > -1){
+            setCookie('faldonmovistar',1,1);
+            $('body').append('<div id="faldonmovistar" style="position: fixed; bottom: 0px; top: auto; background-color: #005c84; height:60px; width: 94%;padding: 0 3%;; z-index: 99998;" class="faldonhome"><img style="float: left; margin-top: 20px;margin-left: 3rem; z-index: 99999;" src="http://dumdum.es/resources/img/porserdemovistar.png" > <img style="float: right; margin-top: 20px;margin-right: 260px;" src="http://dumdum.es/resources/img/movistar.png" ></div>');
+        }else{
+            $faldon=getCookie('faldonmovistar');
+
+            if($faldon==1){
+                $('body').append('<div id="faldonmovistar" style="position: fixed; bottom: 0px; top: auto; background-color: #005c84; height:60px; width: 94%;padding: 0 3%;; z-index: 99998;" class="faldonhome"><img style="float: left; margin-top: 20px;margin-left: 3rem; z-index: 99999;" src="http://dumdum.es/resources/img/porserdemovistar.png" > <img style="float: right; margin-top: 20px;margin-right: 260px;" src="http://dumdum.es/resources/img/movistar.png" ></div>');
+            }
+
+        }
+    });
+
+
+
+
+    
+</script>
+
+
+<script src="/resources/js/waypoints.min.js"></script>
+<script src="/resources/js/dumdum-script.js"></script>
+<script src="/resources/js/jquery.nav.js"></script>
+<script src="/resources/js/jquery.scrollTo.js"></script>
+
+<script src="/resources/js/bootstrap.min.js"></script>
+<script src="/resources/js/holder.js"></script>
+
+
+
+<script type="text/javascript">
+    
+    setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0022/8043.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+    
+</script>
+<!-- end crazyegg  -->
+<a id="Intercom" ></a>
+    <script id="IntercomSettingsScriptTag">
+        var d = new Date();
+        var time = d.getTime();
+        window.intercomSettings = {
+            // TODO: The current logged in user's full name
+            name: "",
+            // TODO: The current logged in user's email address.
+            email: "",
+            // TODO: The current logged in user's id.
+            user_id:"",
+            app_id: "037db4b004d6ad0be245ce38b26931bfc112880d",
+            user_hash: "<?php echo hash_hmac('sha256',, '232q7owbuB3R_db987PaxFH2_rVO5LJ3rHlJjwf8');?>",
+            widget: {
+                activator: "#Intercom"
+            }
+
+        };
+    </script>
+    <script>
+        (function () {
+            var w = window;
+            var ic = w.Intercom;
+            if (typeof ic === "function") {
+                ic('reattach_activator');
+                ic('update', intercomSettings);
+            } else {
+                var d = document;
+                var i = function () {
+                    i.c(arguments)
+                };
+                i.q = [];
+                i.c = function (args) {
+                    i.q.push(args)
+                };
+                w.Intercom = i;
+
+                function l() {
+                    var s = d.createElement('script');
+                    s.type = 'text/javascript';
+                    s.async = true;
+                    s.src = 'https://static.intercomcdn.com/intercom.v1.js';
+                    var x = d.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                }
+                if (w.attachEvent) {
+                    w.attachEvent('onload', l);
+                } else {
+                    w.addEventListener('load', l, false);
+                }
+            }
+        })()
+    </script>
+
+</body>
+
+<!-- Nirror -->
+<script type="text/javascript">
+    
+    (function(i,s,o,g,r,a,m){i['NirrorObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();i[r].scriptURL=g;a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://static.nirror.com/client/nirrorclient.js','Ni');
+
+    Ni('site', '553fa6dd4108f3ce212518f7');
+    
+</script>
+<!-- End Nirror -->
+
+</html>
+
